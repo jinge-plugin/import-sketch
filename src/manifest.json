@@ -1,0 +1,18 @@
+{
+  "name": {
+    "zh_cn": "导入 Sketch 文件",
+    "en": "Import Sketch File"
+  },
+  "author": {
+    "zh_cn": "静格官方",
+    "en": "Jinge"
+  },
+  "homepage": {
+    "zh_cn": "",
+    "en": ""
+  },
+  "script": "script.js",
+  "commands": [{
+    "id": "import"
+  }]
+}

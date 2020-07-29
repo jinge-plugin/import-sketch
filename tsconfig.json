@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es2019",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": ".tmp",
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

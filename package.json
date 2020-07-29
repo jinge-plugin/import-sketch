@@ -1,0 +1,53 @@
+{
+  "name": "import-sketch",
+  "version": "0.0.1",
+  "description": "import sketch file into jinge design project",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "cpx -w 'src/**/*.{scss,html}",
+    "build": "",
+    "lint": "npm run stylelint && npm run eslint",
+    "stylelint": "stylelint '**/*.scss' --syntax scss",
+    "eslint": "eslint .",
+    "fixstylelint": "stylelint '**/*.scss' --syntax scss --fix",
+    "fixeslint": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinge-plugin/import-sketch.git"
+  },
+  "keywords": [
+    "jinge",
+    "plugin",
+    "sketch",
+    "import"
+  ],
+  "author": "Yuhang Ge <abeyuhang@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinge-plugin/import-sketch/issues"
+  },
+  "homepage": "https://github.com/jinge-plugin/import-sketch#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "@webpack-cli/serve": "^1.0.1-alpha.5",
+    "clean-css": "^4.2.3",
+    "cpx": "^1.5.0",
+    "css-loader": "^4.0.0",
+    "eslint": "^7.1.0",
+    "node-sass": "^4.14.1",
+    "precommit-hook": "^3.0.0",
+    "sass-loader": "^9.0.2",
+    "stylelint": "^13.3.3",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.17.2",
+    "typescript": "^3.9.7",
+    "webpack": "^5.0.0-beta.17",
+    "webpack-cli": "^4.0.0-beta.8"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
